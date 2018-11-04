@@ -1,0 +1,48 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest/globals": true
+  },
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "semi": [
+      2,
+      "always"
+    ],
+    "no-case-declarations": 0,
+    "import/first": 0,
+    "import/no-extraneous-dependencies": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/media-has-caption": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "no-console": 0,
+    "react/jsx-filename-extension": 0,
+    "react/prop-types": 0,
+    "react/jsx-wrap-multilines": 0,
+    "react/sort-comp": 0,
+    "react/no-multi-comp": 0,
+    "react/no-unused-state": 0,
+    "react/display-name": 0,
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error"
+  },
+  "plugins": ["jest", "react"],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.js"
+      }
+    }
+  }
+}
