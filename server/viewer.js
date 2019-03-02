@@ -6,7 +6,6 @@ const bodyParser = require('koa-bodyparser');
 const Negotiator = require('negotiator');
 const Router = require('koa-router');
 const serve = require('koa-static');
-const api = require('./api');
 
 const app = new Koa();
 const router = new Router();
@@ -17,7 +16,6 @@ app.use(session(sessionConfig, app));
 app.keys = ['webviewer'];
 app.use(serve(path.resolve(__dirname, './../')));
 app.use(router.routes()).use(router.allowedMethods());
-router.use(api.routes());
 
 const gateHtml = fs.readFileSync(path.resolve('./views/index.html'), { encoding: 'utf8' });
 const port = 5001;

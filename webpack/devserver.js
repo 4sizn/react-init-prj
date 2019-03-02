@@ -1,7 +1,7 @@
 const { resolve } = require('path');
 const devConfig = require('./dev');
 const buildConfig = require('./build');
-const proxy = 'http://localhost:5001';
+const proxy = 'http://0.0.0.0:5001';
 
 module.exports = () => {
   const config = {
@@ -9,7 +9,7 @@ module.exports = () => {
     devServer: {
       port: 3000,
       https: false,
-      host: 'localhost',
+      host: '0.0.0.0',
       contentBase: resolve(__dirname, '../views/'),
       publicPath: '/public/js/',
       proxy: { '**': { target: proxy, secure: false } }

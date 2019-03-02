@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "scripts" : {
-    "dev" : "webpack-dev-server --config webpack/devserver.js --hot --inline",
-    "dev-server" : "npm run server & npm run dev",
-
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack/devserver.js --hot --inline",
+    "dev-server": "npm run server & npm run dev",
     "build": "webpack --config webpack/build.js",
     "server": "cross-env nodemon --watch server/ server/viewer.js"
   },
@@ -58,6 +57,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "loadjs": "^3.5.4",
+    "prop-types": "^15.7.2",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-router-dom": "^4.3.1"

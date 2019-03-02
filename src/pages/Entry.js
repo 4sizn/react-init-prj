@@ -4,10 +4,7 @@ import Main from '../Components/Main';
 const Entry = () => {
   return (
     <div>
-    
-    aasdf
       <Main />
-    
     </div>
   );
 };

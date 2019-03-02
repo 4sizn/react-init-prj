@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './Main.scss'
-;
+import styles from './Main.scss';
+import BattleGround from './BattleGround';
 
 const Main = () => {
   return (
     <div className={styles['main']}>
-      안녕하세요
+      <BattleGround></BattleGround>
     </div>
   );
 };

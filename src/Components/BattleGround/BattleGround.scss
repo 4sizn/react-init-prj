@@ -1,0 +1,48 @@
+.battleground{
+    position: relative;
+}
+
+.title{
+    text-align: center;
+}
+.versus{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    color: white;
+    z-index: 5560;
+    display: flex;
+    align-items: center;
+}
+
+
+.battleground__selectors{
+    display: flex;
+}
+
+.selector{
+    position: relative;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+
+    text-align: center;
+
+    &:nth-child(1){
+        background-color: red
+    }
+    &:nth-child(2){
+        background-color: blue;
+    }
+
+    .selector__title{
+        position: absolute;
+        bottom: 25%;
+        left: 0;
+        right: 0;
+        // text-align: center;
+
+    }
+}
